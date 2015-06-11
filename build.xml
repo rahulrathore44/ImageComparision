@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<project name="ImageCompare" default="createjar" basedir=".">
+	<property name="src.dir" value="src" />
+	<property name="bin.dir" value="bin" />
+	<property name="jar.dir" value="jar" />
+	
+	<path id="classpath" >
+		<pathelement location="${bin.dir}" />
+	</path>
+	
+	<target name="compile">
+		<javac srcdir="${src.dir}" classpathref="classpath" 
+			destdir="${bin.dir}" includeantruntime="false"
+			includes="**/*.java" />
+	</target>
+	
+	<target name="createjar">
+		<jar destfile="${jar.dir}/imagecompare.jar" update="true" >
+			<fileset dir="${bin.dir}">
+			</fileset>
+		</jar>
+	</target>
+</project>
