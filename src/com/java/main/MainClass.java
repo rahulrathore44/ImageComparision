@@ -13,6 +13,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		try {
+			
 			System.out.println(ImageHelper.areImgSame(new URL("http://www.mkyong.com/image/mypic.jpg"), ""));
 		} catch (MalformedURLException e) {
 			e.printStackTrace();

@@ -23,6 +23,7 @@ public class ImageHelper {
 	private static BufferedImage srcImg = null;
 	private static BufferedImage trgImg = null;
 	
+	
 	public static boolean areImgSame(Object aImg,Object bImg) {
 		
 		if(!(aImg instanceof URL))

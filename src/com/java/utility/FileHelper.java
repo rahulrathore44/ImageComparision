@@ -14,6 +14,7 @@ import javax.imageio.ImageIO;
 
 public class FileHelper {
 	
+	
 	public static BufferedImage getImageFile(String path) {
 		try {
 			return ImageIO.read(new File(path));
